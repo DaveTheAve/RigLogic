@@ -1,35 +1,72 @@
+<p align="center">
+  <a href="https://davetheave.github.io/RigLogic/">
+    <img src="assets/riglogic-github-banner.svg" alt="RigLogic - Free for Windows and Linux - Visit the official RigLogic website" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://davetheave.github.io/RigLogic/">Visit the official RigLogic website</a></strong><br>
+  The website is the best place to learn about RigLogic, explore its features, and get the public release when it is ready.
+</p>
+
+---
+
 # RigLogic
 
-**Built for Better Controls. Mostly.**
+**Built for Better Controls. *Mostly.***
 
-This repository is the public home for RigLogic: its website, public documentation, releases, and issue tracking.
+RigLogic is a **free control-translation tool for Windows and Linux** - the missing layer between hardware and intent.
 
-The Windows application itself is still being polished and its application source is intentionally not published here yet. This repository contains only public-facing material.
+Keep the gear you love. Lose the inputs you don't.
 
-## Website
+Shape analog response, clean up unwanted movement, translate switches and encoders, build more useful control behavior, and inspect what your hardware is actually doing with **Signal Labs**.
 
-The current marketing site lives in `website/`.
+## Go to the website
 
-It is a static site designed for GitHub Pages—no server, database, account system, or backend is required. During pre-release the site remains marked `noindex,nofollow`, and the download controls point visitors toward GitHub Releases without pretending a public player build already exists.
+### [davetheave.github.io/RigLogic/](https://davetheave.github.io/RigLogic/)
 
-A Pages workflow is included under `.github/workflows/pages.yml`. Once GitHub Pages is enabled for this repository with **GitHub Actions** as the source, changes to `website/` on `main` can deploy automatically.
+The website contains the product overview, interactive Signal Playground, response-curve demo, Signal Labs examples, platform information, screenshots and release information.
 
-## Public repository structure
+## What this repository is for
 
-```
+This public repository is the home for:
+
+- the RigLogic website
+- public documentation
+- GitHub Releases
+- issue tracking and support
+
+The application itself is still being polished for its first public release.
+
+## Releases
+
+RigLogic is planned to launch for **Windows and Linux**.
+
+Public builds will be published through **GitHub Releases** when the first release is ready. Until then, the website is the best place to follow the project.
+
+## Repository structure
+
+```text
 RigLogic/
-├── website/                 # Static marketing website
-├── docs/                    # Public-facing documentation
+├── assets/                   # GitHub-facing artwork
+├── website/                  # RigLogic marketing website
+├── docs/                     # Public documentation
 ├── .github/
 │   └── workflows/
-│       └── pages.yml        # GitHub Pages deployment
+│       └── pages.yml         # GitHub Pages deployment
 └── README.md
 ```
 
-Public Windows releases will eventually live under **GitHub Releases** in this repository. Application source, private build infrastructure, and unreleased implementation details stay outside this repo.
+Application source, private development infrastructure, and unreleased implementation details are intentionally kept outside this public repository.
 
 ## Status
 
-RigLogic is still in active pre-release development. Website copy, screenshots, compatibility notes, and download links may change before the first public release.
+RigLogic is in active pre-release development.
 
-The current site uses neutral illustrated example setups instead of a personal controller profile. Fresh native application screenshots can replace those illustrations before launch.
+Website copy, screenshots, compatibility information and download links may change as we get closer to release.
+
+---
+
+<p align="center">
+  <strong><a href="https://davetheave.github.io/RigLogic/">Visit RigLogic</a></strong>
+</p>
