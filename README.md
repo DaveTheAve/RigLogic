@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://davetheave.github.io/RigLogic/">
-    <img src="assets/riglogic-github-banner.svg" alt="RigLogic - Free for Windows and Linux - Visit the official RigLogic website" width="100%">
+    <img src="assets/riglogic-github-banner.png" alt="RigLogic - Free for Windows and Linux - Visit the official RigLogic website" width="100%">
   </a>
 </p>
 
