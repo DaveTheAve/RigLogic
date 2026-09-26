@@ -1,48 +1,121 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="440" viewBox="0 0 1600 440" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600" role="img" aria-labelledby="title desc">
   <title id="title">RigLogic - Visit the official website</title>
   <desc id="desc">RigLogic. Built for Better Controls. Mostly. Free for Windows and Linux. Visit the official website.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#17171d"/>
-      <stop offset="0.55" stop-color="#1d1b24"/>
-      <stop offset="1" stop-color="#121218"/>
+      <stop offset="0" stop-color="#11131b"/>
+      <stop offset="0.5" stop-color="#171827"/>
+      <stop offset="1" stop-color="#24183b"/>
     </linearGradient>
-    <radialGradient id="glow" cx="25%" cy="22%" r="75%">
-      <stop offset="0" stop-color="#7f5da8" stop-opacity=".38"/>
-      <stop offset=".52" stop-color="#7f5da8" stop-opacity=".10"/>
-      <stop offset="1" stop-color="#7f5da8" stop-opacity="0"/>
+    <radialGradient id="leftGlow" cx="18%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#8d58d5" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#8d58d5" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#8d58d5" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#d4b5ff"/>
-      <stop offset="1" stop-color="#9e78d5"/>
+    <radialGradient id="rightGlow" cx="83%" cy="17%" r="60%">
+      <stop offset="0" stop-color="#7d4cc0" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#7d4cc0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0c2ff"/>
+      <stop offset=".56" stop-color="#b583ff"/>
+      <stop offset="1" stop-color="#7b49e6"/>
     </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity=".32"/>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#dfbcff"/>
+      <stop offset="1" stop-color="#b581f1"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="14" stdDeviation="24" flood-color="#7a3dd2" flood-opacity=".34"/>
     </filter>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="16" stdDeviation="28" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+    <filter id="nodeGlow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="panelClip"><rect x="0" y="0" width="500" height="360" rx="28"/></clipPath>
   </defs>
-  <rect x="1" y="1" width="1598" height="438" rx="34" fill="url(#bg)" stroke="#3a3446" stroke-width="2"/>
-  <rect x="1" y="1" width="1598" height="438" rx="34" fill="url(#glow)"/>
-  <g opacity=".2">
-    <circle cx="1335" cy="86" r="120" fill="none" stroke="#b99bdd" stroke-width="2"/>
-    <circle cx="1335" cy="86" r="185" fill="none" stroke="#b99bdd" stroke-width="2"/>
-    <circle cx="1335" cy="86" r="250" fill="none" stroke="#b99bdd" stroke-width="2"/>
+
+  <rect width="1800" height="600" fill="url(#bg)"/>
+  <rect width="1800" height="600" fill="url(#leftGlow)"/>
+  <rect width="1800" height="600" fill="url(#rightGlow)"/>
+
+  <g fill="none" stroke="#885ac2" stroke-opacity=".14" stroke-width="3">
+    <path d="M-40 360 C170 540 420 520 640 600"/>
+    <path d="M930 -20 C1070 55 1070 140 1220 160 C1420 186 1550 70 1840 65"/>
+    <path d="M985 600 C1205 565 1340 475 1495 430 C1630 390 1725 407 1840 310"/>
   </g>
-  <g transform="translate(74 76)" filter="url(#shadow)">
-    <rect width="124" height="124" rx="30" fill="#2b2335" stroke="#a881d5" stroke-width="3"/>
-    <path d="M31 30h41c25 0 40 12 40 32 0 15-8 25-23 30l29 31H91L65 96H54v27H31V30Zm23 20v27h17c12 0 18-4 18-14 0-9-6-13-18-13H54Z" fill="url(#accent)"/>
+  <g fill="#ab7ee7" opacity=".26">
+    <circle cx="31" cy="34" r="2.5"/><circle cx="59" cy="34" r="2.5"/><circle cx="87" cy="34" r="2.5"/><circle cx="115" cy="34" r="2.5"/>
+    <circle cx="31" cy="62" r="2.5"/><circle cx="59" cy="62" r="2.5"/><circle cx="87" cy="62" r="2.5"/><circle cx="115" cy="62" r="2.5"/>
+    <circle cx="31" cy="90" r="2.5"/><circle cx="59" cy="90" r="2.5"/><circle cx="87" cy="90" r="2.5"/><circle cx="115" cy="90" r="2.5"/>
+    <circle cx="1645" cy="495" r="2.5"/><circle cx="1673" cy="495" r="2.5"/><circle cx="1701" cy="495" r="2.5"/><circle cx="1729" cy="495" r="2.5"/>
+    <circle cx="1645" cy="523" r="2.5"/><circle cx="1673" cy="523" r="2.5"/><circle cx="1701" cy="523" r="2.5"/><circle cx="1729" cy="523" r="2.5"/>
   </g>
-  <text x="234" y="137" fill="#f4f1f8" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="74" font-weight="800" letter-spacing="-2">RigLogic</text>
-  <circle cx="532" cy="128" r="7" fill="#c3a1ef"/>
-  <text x="236" y="187" fill="#bcb5c6" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="28" font-weight="500">Built for Better Controls. <tspan font-style="italic">Mostly.</tspan></text>
-  <g transform="translate(236 230)">
-    <rect width="290" height="54" rx="27" fill="#b9f4d1"/>
-    <text x="145" y="36" text-anchor="middle" fill="#16231b" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="1">FREE</text>
-    <text x="330" y="35" fill="#d8d1df" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="24" font-weight="700">WINDOWS + LINUX</text>
+
+  <g transform="translate(94 105)" filter="url(#logoShadow)">
+    <rect width="170" height="170" rx="38" fill="#17151f" stroke="#aa75e8" stroke-width="4"/>
+    <path d="M39 39h56c34 0 54 17 54 44 0 20-11 34-31 41l39 43h-37l-34-37H70v37H39V39Zm31 27v37h24c16 0 24-6 24-19 0-12-8-18-24-18H70Z" fill="url(#logoGrad)"/>
+    <path d="M86 103h31l40 64h-35Z" fill="#7545d6" opacity=".7"/>
   </g>
-  <g transform="translate(236 326)">
-    <rect width="500" height="70" rx="18" fill="#c9a7f2"/>
-    <text x="28" y="45" fill="#211927" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="25" font-weight="800">VISIT THE OFFICIAL WEBSITE</text>
-    <path d="M447 25l18 10-18 10M425 35h37" fill="none" stroke="#211927" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="310" y="188" fill="#f8f5ff" font-family="Segoe UI, Arial, sans-serif" font-size="89" font-weight="800" letter-spacing="-3">RigLogic</text>
+  <circle cx="685" cy="174" r="7" fill="#cfa5ff"/>
+  <text x="312" y="252" fill="#cbc5d5" font-family="Segoe UI, Arial, sans-serif" font-size="35" font-weight="500">Built for Better Controls. <tspan fill="#c896ff" font-style="italic">Mostly.</tspan></text>
+
+  <g transform="translate(312 298)">
+    <rect width="164" height="56" rx="28" fill="#b6efcf"/>
+    <text x="82" y="37" text-anchor="middle" fill="#18231d" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" letter-spacing="3">FREE</text>
+    <rect x="200" y="6" width="2" height="44" fill="#706979" opacity=".75"/>
+    <text x="244" y="37" fill="#dfd9e8" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="750" letter-spacing="1.5">WINDOWS + LINUX</text>
   </g>
-  <text x="782" y="371" fill="#968e9f" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21">davetheave.github.io/RigLogic/</text>
+
+  <g transform="translate(94 430)">
+    <rect width="650" height="92" rx="24" fill="url(#ctaGrad)" filter="url(#softShadow)"/>
+    <text x="46" y="58" fill="#21172c" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing=".5">VISIT THE OFFICIAL WEBSITE</text>
+    <path d="M574 31l25 15-25 15M547 46h49" fill="none" stroke="#21172c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="690" y="15" width="2" height="62" fill="#777080" opacity=".65"/>
+    <g transform="translate(744 20)">
+      <path d="M17 20c-7 7-7 18 0 25 7 7 18 7 25 0l9-9M43 28l9-9c7-7 7-18 0-25-7-7-18-7-25 0l-9 9" transform="scale(.72) translate(0 14)" fill="none" stroke="#a99db8" stroke-width="5" stroke-linecap="round"/>
+      <text x="55" y="42" fill="#bfb7c9" font-family="Segoe UI, Arial, sans-serif" font-size="25">davetheave.github.io/RigLogic/</text>
+    </g>
+  </g>
+
+  <g transform="translate(1110 76) rotate(-4 250 180)" opacity=".58" filter="url(#softShadow)">
+    <rect width="500" height="360" rx="28" fill="#242237" fill-opacity=".72" stroke="#8c6bb5" stroke-opacity=".54" stroke-width="3"/>
+    <g clip-path="url(#panelClip)">
+      <rect x="0" y="0" width="500" height="62" fill="#29263c" fill-opacity=".78"/>
+      <circle cx="30" cy="30" r="7" fill="#a979e8"/><circle cx="54" cy="30" r="7" fill="#805aa9"/><circle cx="78" cy="30" r="7" fill="#5a496d"/>
+
+      <rect x="24" y="82" width="140" height="220" rx="18" fill="#1c1b2a" fill-opacity=".76"/>
+      <rect x="42" y="106" width="100" height="13" rx="7" fill="#6e617e" fill-opacity=".45"/>
+      <rect x="36" y="145" width="112" height="43" rx="12" fill="#6f45ad" fill-opacity=".62"/>
+      <circle cx="53" cy="166" r="8" fill="#b987fb"/>
+      <rect x="69" y="159" width="61" height="12" rx="6" fill="#a072dc"/>
+      <rect x="42" y="210" width="91" height="10" rx="5" fill="#5d506c" fill-opacity=".5"/>
+      <rect x="42" y="238" width="72" height="10" rx="5" fill="#5d506c" fill-opacity=".38"/>
+      <rect x="42" y="266" width="102" height="10" rx="5" fill="#5d506c" fill-opacity=".32"/>
+
+      <rect x="184" y="82" width="220" height="142" rx="18" fill="#1d1b2b" fill-opacity=".82" stroke="#695780" stroke-opacity=".34"/>
+      <g stroke="#705e86" stroke-opacity=".22" stroke-width="1">
+        <path d="M207 110H382M207 139H382M207 168H382M207 197H382"/>
+        <path d="M225 101V207M267 101V207M309 101V207M351 101V207"/>
+      </g>
+      <path d="M210 192 C250 190 267 180 285 167 C308 150 321 117 347 104 C364 95 377 92 390 89" fill="none" stroke="#b67bf2" stroke-width="4"/>
+      <g fill="#aa73e8" filter="url(#nodeGlow)">
+        <circle cx="210" cy="192" r="5"/><circle cx="285" cy="167" r="5"/><circle cx="347" cy="104" r="5"/><circle cx="390" cy="89" r="7" fill="#c895ff"/>
+      </g>
+
+      <rect x="184" y="244" width="220" height="82" rx="18" fill="#1d1b2b" fill-opacity=".8"/>
+      <rect x="205" y="265" width="163" height="8" rx="4" fill="#5d506c"/><rect x="205" y="265" width="91" height="8" rx="4" fill="#a271d9"/>
+      <circle cx="296" cy="269" r="9" fill="#8c5fc2"/>
+      <rect x="205" y="298" width="163" height="8" rx="4" fill="#5d506c"/><rect x="205" y="298" width="124" height="8" rx="4" fill="#9071b0"/>
+      <circle cx="329" cy="302" r="9" fill="#8c5fc2"/>
+
+      <rect x="425" y="82" width="52" height="244" rx="16" fill="#201e2f" fill-opacity=".85"/>
+      <rect x="436" y="104" width="30" height="11" rx="6" fill="#635672"/><rect x="436" y="135" width="30" height="11" rx="6" fill="#53475f"/><rect x="436" y="166" width="30" height="11" rx="6" fill="#53475f"/><rect x="436" y="215" width="30" height="31" rx="8" fill="#4e435c" fill-opacity=".72"/>
+    </g>
+  </g>
 </svg>
